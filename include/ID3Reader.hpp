@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <taglib/fileref.h>
 
 /** 
  * @class ID3Reader
@@ -40,4 +41,5 @@ public:
 
 private:
     std::string filePath_;
+    TagLib::FileRef tagFile_;
 };
